@@ -1,0 +1,203 @@
+:root {
+  --ordaap-gradient-light: #ffffff;
+  --ordaap-gradient-dark: #ef3b36;
+  --kinvey-gradient-light:#b6e5ff;
+  --kinvey-gradient-dark: #1c92d2;
+  --dz-gradient-light: #b5adfd;
+  --dz-gradient-dark: #5848ff;
+  --bah-gradient-dark: '';
+  --bah-gradient-light: '';
+  --ordaap-tags-bg: '';
+  --kinvey-tags-bg: #0089d8;
+  --kinvey-tags-shadow: rgba(69, 143, 214, 0.7);
+  --dz-tags-bg: #5848ff;
+  --dz-tags-shadow: rgba(87, 73, 254, 0.50);
+  --bah-tags-bg: '';
+}
+
+/* Fontello */
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?93819373');
+  src: url('../font/fontello.eot?93819373#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?93819373') format('woff2'),
+       url('../font/fontello.woff?93819373') format('woff'),
+       url('../font/fontello.ttf?93819373') format('truetype'),
+       url('../font/fontello.svg?93819373#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?93819373#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="fa-"]:before, [class*=" fa-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.fa-twitter:before { content: '\f099'; } /* '' */
+.fa-github-circled:before { content: '\f09b'; } /* '' */
+.fa-linkedin:before { content: '\f0e1'; } /* '' */
+
+.content-container {
+  width: 70%;
+}
+
+.content-container .logo {
+  height: 160px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.content-container .logo > .profile {
+  width: 160px;
+}
+
+.primary-heading {
+  font-size: 52px;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  font-weight:bold
+}
+
+.secondary-heading {
+  margin-top: 20px;
+  font-size: 22px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+.description {
+  font-size: 17px;
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+
+.tags{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius:5px;
+  background-color:white;
+  margin-right:10px;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.tags.personal {
+  color: white;
+  background-color: black;
+  box-shadow: 0px 10px 20px #adadad;
+}
+
+.tags.ordaap {
+  color: white;
+  background-color: #ef3b36;
+  box-shadow:0px 10px 20px #ef3b3694
+}
+
+.tags.kinvey {
+  color: white;
+  background-color: var(--kinvey-tags-bg);
+  box-shadow: 0px 10px 20px var(--kinvey-tags-shadow);
+}
+
+.tags.dz {
+  color: white;
+  background-color: var(--dz-tags-bg);
+  box-shadow: 0px 10px 20px var(--dz-tags-shadow);
+}
+
+.tags.bah {
+  color: white;
+  background-color: #2c5cff;
+  box-shadow: 0px 10px 20px rgb(44, 142, 255);
+}
+
+.social{
+  padding-top: 40px;
+}
+
+.socialicon{
+  font-size:22px;
+  margin-right: 20px
+}
+
+/* Overrides */
+.carousel-item {
+  height: 100vh;
+  padding:60px;
+  padding-left:15vw;
+  padding-top: 25vh;
+  width:100%;
+}
+
+.carousel-inner {
+  background-image: url(../images/background.png);
+  background-position:center;
+}
+
+.carousel-item.ordaap {
+  background: linear-gradient(to bottom, var(--ordaap-gradient-dark), var(--ordaap-gradient-light));
+}
+
+.carousel-item.kinvey {
+  background: linear-gradient(to bottom, var(--kinvey-gradient-dark), var(--kinvey-gradient-light));
+}
+
+.carousel-item.dz {
+  background: linear-gradient(to bottom, var(--dz-gradient-dark), var(--dz-gradient-light));
+}
+
+.carousel-item.bah {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+
+.carousel-indicators li {
+  background-color: rgb(238, 238, 238, 0.6) !important;
+}
+
+.carousel-indicators li.active {
+  background-color: lightgrey !important;
+}
