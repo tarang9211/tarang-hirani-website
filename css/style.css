@@ -1,18 +1,28 @@
 :root {
-  --ordaap-gradient-light: #ffffff;
+  --ordaap-gradient-light: #ffc9c7;
   --ordaap-gradient-dark: #ef3b36;
+  --ordaap-tags-bg: #e4322e;
+  --ordaap-tags-shadow: rgba(149, 49, 46, 0.54);
+
   --kinvey-gradient-light:#b6e5ff;
   --kinvey-gradient-dark: #1c92d2;
+  --kinvey-tags-bg: #0089d8;
+  --kinvey-tags-shadow: rgba(46, 111, 174, 0.7);
+
   --dz-gradient-light: #b5adfd;
   --dz-gradient-dark: #5848ff;
-  --bah-gradient-dark: '';
-  --bah-gradient-light: '';
-  --ordaap-tags-bg: '';
-  --kinvey-tags-bg: #0089d8;
-  --kinvey-tags-shadow: rgba(69, 143, 214, 0.7);
   --dz-tags-bg: #5848ff;
   --dz-tags-shadow: rgba(87, 73, 254, 0.50);
+
+  --bah-gradient-dark: '';
+  --bah-gradient-light: '';
   --bah-tags-bg: '';
+  --bah-tags-shadow: '';
+
+  --personal-tags-bg: #000000;
+  --personal-tags-shadow: #7f7f7f;
+
+  --tags-shadow-blur: 20px;
 }
 
 /* Fontello */
@@ -127,32 +137,32 @@
 
 .tags.personal {
   color: white;
-  background-color: black;
-  box-shadow: 0px 10px 20px #adadad;
+  background-color: var(--personal-tags-bg);
+  box-shadow: 0px 10px var(--tags-shadow-blur) var(--personal-tags-shadow);
 }
 
 .tags.ordaap {
   color: white;
-  background-color: #ef3b36;
-  box-shadow:0px 10px 20px #ef3b3694
+  background-color: var(--ordaap-tags-bg);
+  box-shadow: 0px 10px var(--tags-shadow-blur) var(--ordaap-tags-shadow);
 }
 
 .tags.kinvey {
   color: white;
   background-color: var(--kinvey-tags-bg);
-  box-shadow: 0px 10px 20px var(--kinvey-tags-shadow);
+  box-shadow: 0px 10px var(--tags-shadow-blur) var(--kinvey-tags-shadow);
 }
 
 .tags.dz {
   color: white;
   background-color: var(--dz-tags-bg);
-  box-shadow: 0px 10px 20px var(--dz-tags-shadow);
+  box-shadow: 0px 10px var(--tags-shadow-blur) var(--dz-tags-shadow);
 }
 
 .tags.bah {
   color: white;
   background-color: #2c5cff;
-  box-shadow: 0px 10px 20px rgb(44, 142, 255);
+  box-shadow: 0px 10px var(--tags-shadow-blur) rgb(44, 142, 255);
 }
 
 .social{
@@ -175,7 +185,7 @@
 
 .carousel-inner {
   background-image: url(../images/background.png);
-  background-position:center;
+  background-position: 0px 200px;
 }
 
 .carousel-item.ordaap {
