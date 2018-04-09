@@ -3,37 +3,122 @@
 }
 
 .content-container .logo {
-  width: 160px;
   height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .content-container .logo > .profile {
-  width: 100%;
+  width: 160px;
 }
 
 .primary-heading {
   font-size: 52px;
   color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  font-weight:bold
 }
 
 .secondary-heading {
+  margin-top: 20px;
   font-size: 22px;
   color: black;
+  font-family: 'Lato', sans-serif;
 }
 
 .description {
   font-size: 17px;
   color: grey;
+  font-family: 'Lato', sans-serif;
+}
+
+.tags{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius:5px;
+  background-color:white;
+  margin-right:10px;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.tags.personal {
+  color: white;
+  background-color: black;
+  box-shadow: 0px 10px 20px #adadad;
+}
+
+.tags.ordaap {
+  color: white;
+  background-color: #ef3b36;
+  box-shadow:0px 10px 20px #ef3b3694
+}
+
+.tags.kinvey {
+  color: white;
+  background-color: rgb(27, 143, 255);
+  box-shadow:0px 10px 20px rgb(27, 143, 255)
+}
+
+.tags.dz {
+  color: white;
+  background-color: #f37aff;
+  box-shadow:0px 10px 20px rgb(27, 143, 255)
+}
+
+.tags.bah {
+  color: white;
+  background-color: #2c5cff;
+  box-shadow: 0px 10px 20px rgb(44, 142, 255);
+}
+
+.social{
+  padding-top: 40px;
+}
+
+.socialicon{
+  font-size:22px;
+  margin-right: 20px
 }
 
 /* Overrides */
 .carousel-item {
-  background: lightgray;
   height: 100vh;
   padding:60px;
   padding-left:15vw;
   padding-top: 25vh;
   width:100%;
+}
+
+.carousel-inner {
+  background-image: url(images/background.png);
+  background-position:center;
+}
+
+.carousel-item.ordaap {
+  background: linear-gradient(to bottom, #ef3b36, #ffffff);
+}
+
+.carousel-item.kinvey {
+  background: linear-gradient(to right, #b2fefa, #0ed2f7);
+}
+
+.carousel-item.dz {
+  background: linear-gradient(to top, #f37aff 0%,#8a7fff 100%);
+}
+
+.carousel-item.bah {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+
+.carousel-indicators li {
+  background-color: rgb(238, 238, 238, 0.6) !important;
+}
+
+.carousel-indicators li.active {
+  background-color: lightgrey !important;
 }
