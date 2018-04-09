@@ -1,0 +1,39 @@
+.content-container {
+  width: 70%;
+}
+
+.content-container .logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content-container .logo > .profile {
+  width: 100%;
+}
+
+.primary-heading {
+  font-size: 52px;
+  color: black;
+}
+
+.secondary-heading {
+  font-size: 22px;
+  color: black;
+}
+
+.description {
+  font-size: 17px;
+  color: grey;
+}
+
+/* Overrides */
+.carousel-item {
+  background: lightgray;
+  height: 100vh;
+  padding:60px;
+  padding-left:15vw;
+  padding-top: 25vh;
+  width:100%;
+}
