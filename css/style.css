@@ -47,42 +47,42 @@
   }
 }
 */
- 
+
  [class^="fa-"]:before, [class*=" fa-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .fa-twitter:before { content: '\f099'; } /* '' */
 .fa-github-circled:before { content: '\f09b'; } /* '' */
 .fa-linkedin:before { content: '\f0e1'; } /* '' */
@@ -123,6 +123,14 @@
   font-family: 'Lato', sans-serif;
 }
 
+.description.ordaap, .description.kinvey, .description.dz {
+  color: white;
+}
+
+.description.bah {
+  color: darkblue;
+}
+
 .tags{
   padding:5px;
   padding-left:10px;
@@ -144,13 +152,13 @@
 .tags.ordaap {
   color: white;
   background-color: var(--ordaap-tags-bg);
-  box-shadow: 0px 10px var(--tags-shadow-blur) var(--ordaap-tags-shadow);
+  box-shadow: 0px 10px var(--tags-shadow-blur) #eb6d69;
 }
 
 .tags.kinvey {
   color: white;
   background-color: var(--kinvey-tags-bg);
-  box-shadow: 0px 10px var(--tags-shadow-blur) var(--kinvey-tags-shadow);
+  box-shadow: 0px 10px var(--tags-shadow-blur) #37acf1;
 }
 
 .tags.dz {
@@ -162,7 +170,7 @@
 .tags.bah {
   color: white;
   background-color: #2c5cff;
-  box-shadow: 0px 10px var(--tags-shadow-blur) rgb(44, 142, 255);
+  box-shadow: 0px 10px 20px rgba(133, 160, 255, 1);
 }
 
 .social{
